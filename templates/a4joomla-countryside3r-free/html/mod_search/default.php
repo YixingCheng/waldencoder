@@ -16,10 +16,12 @@ defined('_JEXEC') or die;
 
 				if ($button) :
 					if ($imagebutton) :
-						$button = ' <input type="image" value="' . $button_text . '" class="button" src="' . $img . '" onclick="this.form.searchword.focus();"/>';
+						$button = ' <input type="image" value="' . $button_text . '" class="button" src="images/searchButton.gif" onclick="this.form.searchword.focus();"/>';
 					else :
 						$button = ' <button class="button btn" onclick="this.form.searchword.focus();">' . $button_text . '</button>';
 					endif;
+                                else :                                
+                                      $button = '';
 				endif;
 
 				switch ($button_pos) :
